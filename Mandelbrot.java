@@ -1,6 +1,11 @@
 import java.awt.*;
 import java.awt.event.*;
 
+/*
+ * This class creates & runs the outer layer of the GUI
+ * in the main function. Could use some cleaning
+ * up, but the GUI isn't the main focus of this.
+ */
 public class Mandelbrot {
 	public static void main(String[] args) {
 		Frame frame = new Frame("Mandelbrot Calculator");

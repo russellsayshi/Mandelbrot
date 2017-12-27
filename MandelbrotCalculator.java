@@ -1,6 +1,12 @@
 import java.awt.*;
 import java.util.function.*;
 
+/*
+ * This class does all the actual calculation
+ * and determines how to convert the calcualated
+ * value into an image, which is then displayed
+ * by the MandelbrotFrame class.
+ */
 public class MandelbrotCalculator {
 	private Consumer<int[][]> callback; //called as soon as a recalculation completes
 	private int width, height;

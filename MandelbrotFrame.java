@@ -2,6 +2,20 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.*;
 
+/*
+ * This class draws the bufferedimage provided
+ * by the MandelbrotCalculator class onto an AWT
+ * component. Decided to go AWT because I haven't
+ * written it in years and wanted to go back
+ * for old times' sake. Not a bad choice, even
+ * though the buttons are all ugly lmao.
+ *
+ * This also has lots of threading stuff, that's just
+ * so that it only repaints exactly when it needs to.
+ * You can draw a rectangle across the frame to zoom in,
+ * and that needs to get redrawn at 60FPS which is what
+ * the thread is for.
+ */
 public class MandelbrotFrame extends Canvas {
 	private BufferedImage image;
 	private MandelbrotCalculator calc;
