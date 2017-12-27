@@ -5,6 +5,9 @@ import java.awt.event.*;
  * This class creates & runs the outer layer of the GUI
  * in the main function. Could use some cleaning
  * up, but the GUI isn't the main focus of this.
+ * It'll pass this time. If I ever use this project
+ * for anything more than just starting at the beauty
+ * of the set I'll change it up.
  */
 public class Mandelbrot {
 	public static void main(String[] args) {
